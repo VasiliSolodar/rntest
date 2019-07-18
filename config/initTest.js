@@ -7,3 +7,9 @@ if (typeof window !== 'undefined') {
     }
     window.matchMedia = () => ({ matches: true });
 }
+const enzyme = require("enzyme");
+const Adapter = require("enzyme-adapter-react-16");
+
+enzyme.configure({adapter: new Adapter()});
+// ============== global Mocks
+global.fetch = require("jest-fetch-mock");
