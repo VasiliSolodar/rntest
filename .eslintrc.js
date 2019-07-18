@@ -49,5 +49,6 @@ module.exports = {
     // approach to getting data is now to request it in componentDidMount; see
     // https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html
     "react/no-did-mount-set-state": "off",
+    "react/destructuring-assignment": "off"
   }
 };
