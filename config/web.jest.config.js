@@ -27,6 +27,9 @@ module.exports = {
 	transformIgnorePatterns: [
 		'[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$'
 	],
+	snapshotSerializers: [
+		"enzyme-to-json/serializer",
+	],
 	moduleFileExtensions: [
 		'web.js',
 		'js',

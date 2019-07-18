@@ -1,5 +1,7 @@
 'use strict';
-
+const switchSnapshots = require("./switchSnapshots");
+const doneSwitchSnapshots = require("./doneSwitchSnapshots");
+const isNative = process.argv.includes("./config/native.jest.config.js");
 // Do this as the first thing so that any code reading it knows the right env.
 process.env.BABEL_ENV = 'test';
 process.env.NODE_ENV = 'test';
@@ -48,6 +50,8 @@ function isInMercurialRepository() {
 //   const hasSourceControl = isInGitRepository() || isInMercurialRepository();
 //   argv.push(hasSourceControl ? '--watch' : '--watchAll');
 // }
+switchSnapshots(isNative);
 
-
-jest.run(argv);
+jest.run(argv).then(() => {
+  doneSwitchSnapshots(isNative);
+});

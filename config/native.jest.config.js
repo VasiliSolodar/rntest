@@ -23,6 +23,9 @@ module.exports = {
 		// '^(?!.*\\.(js|jsx|css|json)$)': '<rootDir>/config/jest/fileTransform.js'
 	},
 	// transformIgnorePatterns: [], // the array has to be here (no idea why, but it breaks if its gone)
+	snapshotSerializers: [
+		"enzyme-to-json/serializer",
+	],
 	moduleFileExtensions: [
 		'ios.js',
 		'android.js',
