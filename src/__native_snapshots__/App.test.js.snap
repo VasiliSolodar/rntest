@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <AnimatedComponent
+    source={
+      Object {
+        "testUri": "../../../src/logo.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "height": 300,
+          "width": 300,
+        },
+        Object {
+          "transform": Array [
+            Object {
+              "rotate": "0deg",
+            },
+          ],
+        },
+      ]
+    }
+  />
+  <Text
+    style={
+      Object {
+        "fontSize": 16,
+        "fontWeight": "bold",
+      }
+    }
+  >
+    Create React Native Web App
+  </Text>
+  <Text>
+    Open up src/App.js to start working on your app!
+  </Text>
+  <Text>
+    Changes you make will automatically reload.
+  </Text>
+  <Text>
+    Shake your phone to open the developer menu.
+  </Text>
+  <TouchableHighlight
+    activeOpacity={0.85}
+    delayPressOut={100}
+    onPress={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#1B95E0",
+        "borderRadius": 3,
+        "marginTop": 10,
+        "marginVertical": 10,
+        "padding": 20,
+      }
+    }
+    underlayColor="#0A84D0"
+  >
+    <Text
+      style={
+        Object {
+          "color": "#fff",
+          "fontSize": 16,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Rotate Logo
+    </Text>
+  </TouchableHighlight>
+</View>
+`;
